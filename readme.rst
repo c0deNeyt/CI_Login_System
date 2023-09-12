@@ -4,7 +4,7 @@ Requirements
 *********
 
 -  WEB server e.g `Xamp <https://www.apachefriends.org/download.html>`_
--  
+-  Setup Virtual host e.g `Blog Post <https://blog.e-zest.com/how-to-set-up-apache-virtual-host-configuration-on-lamp-environment/>`_  
 
 ###################
 What is CodeIgniter
