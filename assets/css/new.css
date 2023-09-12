@@ -1,0 +1,68 @@
+/*===========================
+    MY PRESETS
+=============================*/
+:root{
+    --ff: "Nunito", Arial, Helvetica, sans-serif;
+    --ff-1: "sourceSans", Arial, Helvetica, sans-serif;
+    --ff-2: "breeSerif", Arial, Helvetica, sans-serif;
+    --s1: 0.063rem;
+    --primary-clr: #2225560;
+    --shadow: 0 0 0.3em rgba(0, 0, 0, 0.304);
+ }
+/*===========================
+    IMPORTED FONTS
+=============================*/
+@font-face {
+    font-family: "Nunito";
+    src: url("../font/Nunito/Nunito-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "sourceSans";
+    src: url("../font/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+    font-family: "breeSerif";
+    src: url("../font/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
+/*===========================
+    BODY WITH RESET
+=============================*/
+*{
+ 	/* outline: 3px solid limegreen !important; */
+    /* background: rgb(0 100 0 /0.1) !important; */
+    padding: 0;
+    margin: 0;
+    font-family: var(--ff);
+}
+/*===========================
+   MAIN DIVISION STARTS HERE
+=============================*/
+body{
+    width: 48rem;
+    height: 789px;
+    background-color: #ebebeb;
+    margin: 0.625rem auto;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.625rem;
+}
+    h1{
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem 0 0 0;
+    }
+    form{
+        margin: 1rem;
+        text-align: center;
+    }
+        label{
+            display: block;
+            margin: 1rem auto;
+            text-align: left;
+            max-width: 10rem;
+        }
+        input[type="submit"]{
+            padding: .5rem;
+        }
+
