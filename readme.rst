@@ -3,8 +3,8 @@
 Requirements
 *********
 
--  `WEB server  eg. Xamp <https://www.apachefriends.org/download.html>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+-  `WEB server``eg. Xamp <https://www.apachefriends.org/download.html>`_
+-  ``_
 
 ###################
 What is CodeIgniter
