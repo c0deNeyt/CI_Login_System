@@ -3,11 +3,7 @@
 Requirements
 *********
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
+-  `WEB server  eg. Xamp <https://www.apachefriends.org/download.html>`_
 -  `Community Slack Channel <https://codeigniterchat.slack.com>`_
 
 ###################
