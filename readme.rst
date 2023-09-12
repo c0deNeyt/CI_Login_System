@@ -3,8 +3,8 @@
 Requirements
 *********
 
--  `WEB server``eg. Xamp <https://www.apachefriends.org/download.html>`_
--  ``_
+-  WEB server e.g `Xamp <https://www.apachefriends.org/download.html>`_
+-  
 
 ###################
 What is CodeIgniter
