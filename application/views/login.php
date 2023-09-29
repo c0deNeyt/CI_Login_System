@@ -1,7 +1,11 @@
   	<body>
 		<div class="wrapper">
 			<h5 class="card-title">LOGIN ACCOUNT</h5>
-			<?php ?>
+<?php
+	if(isset($_SESSION['status'])){
+			echo $_SESSION['status'];
+	}
+?>
 			<form enctype="multipart/form-data"  autocomplete="off" class="form" action="login" method="post">
 				<input type="hidden" name="signEin" value="signIn">
 				<label>Email:

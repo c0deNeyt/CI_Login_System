@@ -4,30 +4,36 @@
 		public function addEmp($data){
 			$this->db->trans_start();
 			// Query
-			$people = array('first_name' => "Christian",
-			'last_name' => "Arana",
-			'age' => "25",
-			'birth_date' => "1998-06-12",
-			'email' => "chan@email.com",
-			'password' => "test",
-			'job_tittle' => "IT Specialist",
+			$tableOne = array('first_name' => $data['fname'],
+			'last_name' => $data['lname'],
+			'age' => $data['age'],
+			'birth_date' => $data['birthdate'],
+			'email' => $data['email'],
+			'password' => $data['pw'],
+			'job_tittle' => $data['jobtitle'],
 			'date_modified' => date('Y-m-d H:i:s'),
 			'date_created' => date('Y-m-d H:i:s'));
 
-			$this->db->insert('employees', $people);
+			$this->db->insert('employees', $tableOne);
 			$last_insert_id = $this->db->insert_id();
 			// Query
-			$access = array('description' => "Admin",
+			$tableTwo = array('description' => "User",
 			'employees_employee_id' => $last_insert_id, 
-			'access_level' => 1, 
+			'access_level' => 0, 
 			'date_modified' => date('Y-m-d H:i:s'),
 			'date_created' => date('Y-m-d H:i:s'));
 
-			$this->db->insert('access_levels', $access);
+			$this->db->insert('access_levels', $tableTwo);
 			$this->db->trans_complete();
-			if ($this->db->trans_status() === FALSE){
-			   return "SOMETHING WENT WRONG";
-			}else { return "TRANSACTION SUCCESSFULL"; }
+			# Validate if the Query sucessfuly commited
+			if ($this->db->trans_status() == FALSE){
+				# Something went wrong	
+				return 1;
+			}else { 
+				# Transaction sucessfuly commited!
+				return 0;
+			}
+			$this->db->trans_off();
 		}
 		# method to fetch user credentials from the database
 		# PENDING ENCRYPTION =============================
